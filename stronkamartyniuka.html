@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #74ebd5, #9face6);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            animation: backgroundMove 10s infinite alternate;
+        }
+        @keyframes backgroundMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .container {
+            max-width: 700px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .social-links a {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            background: #3498db;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .social-links a:hover {
+            background: #2980b9;
+            transform: scale(1.1);
+        }
+        iframe {
+            margin-top: 20px;
+            width: 100%;
+            height: 166px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cześć! Jestem m.urz._</h1>
+        <p>Zapraszam do odwiedzenia moich profili w mediach społecznościowych:</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/m.urz._/profilecard/?igsh=MWE4M25xazhtOHV2aQ==" target="_blank">Instagram</a>
+            <a href="https://snapchat.com/t/bAZRdc3K" target="_blank">Snapchat</a>
+            <a href="https://www.facebook.com/share/19kRh6dWWu/?mibextid=LQQJ4d" target="_blank">Facebook</a>
+        </div>
+        <p>Posłuchaj "Someone New" od Hoziera:</p>
+        <iframe 
+            scrolling="no" 
+            frameborder="no" 
+            allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mo-ica/someone-new-hozier-lyrics-on&color=%230066cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
+    </div>
+</body>
+</html>
